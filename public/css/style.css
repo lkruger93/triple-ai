@@ -70,9 +70,9 @@ ul {
 .btn-lg {
   text-decoration: none;
   font-size: 2rem;
-  color: #fff;
+  color: #1f1f1f;
 
-  border: 1px solid #fff;
+  border: 1px solid #1f1f1f;
   border-radius: 0.5rem;
   padding: 1.5rem 2rem;
 }
@@ -88,7 +88,7 @@ ul {
 
 .btn-small {
   text-decoration: none;
-  color: #f4f4f4;
+  color: #1f1f1f;
 
   background-color: #df1265;
   border-radius: 5rem;
@@ -98,7 +98,7 @@ ul {
 .btn-small:hover {
   color: #df1265;
 
-  background-color: #fff;
+  background-color: #1f1f1f;
   border-radius: 5rem;
   padding: 0.5rem 2rem;
 }
@@ -172,7 +172,7 @@ header nav a:hover {
   min-height: 95vh;
 
   text-align: center;
-  color: #f4f4f4;
+  color: #1f1f1f;
 }
 
 section.home-bg {
