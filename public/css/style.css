@@ -1,3 +1,10 @@
+/* 
+COLORS
+backgrounds/larger items: Dark Gray : #1f1f1f
+accent color - 1 /Headings etc : #df1265
+accent color - 2 /Smaller Headings etc : #f4f4f4
+*/
+
 /* RESETS */
 
 * {
@@ -43,7 +50,7 @@ ul {
 }
 
 .text-colored {
-  color: #2e6b06;
+  color: #df1265;
 }
 
 .text-xl {
@@ -56,7 +63,7 @@ ul {
 }
 
 .current {
-  color: #2e6b06;
+  color: #df1265;
   font-weight: bold;
 }
 
@@ -72,9 +79,9 @@ ul {
 
 .btn-lg:hover {
   font-size: 2rem;
-  color: #2e6b06;
+  color: #df1265;
 
-  border: 1px solid #2e6b06;
+  border: 1px solid #df1265;
   border-radius: 0.5rem;
   padding: 1.5rem 2rem;
 }
@@ -83,13 +90,13 @@ ul {
   text-decoration: none;
   color: #f4f4f4;
 
-  background-color: #2e6b06;
+  background-color: #df1265;
   border-radius: 5rem;
   padding: 0.5rem 2rem;
 }
 
 .btn-small:hover {
-  color: #2e6b06;
+  color: #df1265;
 
   background-color: #fff;
   border-radius: 5rem;
@@ -99,9 +106,9 @@ ul {
 /* HEADER */
 
 header {
-  background-color: #000;
+  background-color: #1f1f1f;
   min-height: fit-content;
-  border-bottom: 2px solid #2e6b06;
+  border-bottom: 2px solid #df1265;
 
   overflow: hidden;
 }
@@ -130,7 +137,7 @@ header a {
 }
 
 header nav a:hover {
-  color: #2e6b06;
+  color: #df1265;
 }
 
 /* Media queries for the header/nav bar */
@@ -296,23 +303,23 @@ textarea {
   font-family: "Open Sans", sans-serif;
   font-size: 1.5rem;
 
-  border: 0.5px solid #2e6b06;
+  border: 0.5px solid #df1265;
   border-radius: 0.5rem;
 }
 
 input:focus,
 textarea:focus {
   outline: none;
-  border: 1px solid #2e6b06;
-  box-shadow: 0 0 2px #2e6b06;
+  border: 1px solid #df1265;
+  box-shadow: 0 0 2px #df1265;
 }
 
 button {
   width: 60%;
   font-size: 1.5rem;
   color: #fff;
-  background: #2e6b06;
-  border: 1px solid #2e6b06;
+  background: #df1265;
+  border: 1px solid #df1265;
   border-radius: 0.25rem;
   margin-bottom: 1rem;
   padding: 1rem 2rem;
@@ -321,9 +328,9 @@ button {
 
 button:hover {
   width: 60%;
-  color: #2e6b06;
+  color: #df1265;
   background: transparent;
-  border: 1px solid #2e6b06;
+  border: 1px solid #df1265;
   margin-bottom: 1rem;
   padding: 1rem 2rem;
   cursor: pointer;
@@ -332,8 +339,8 @@ button:hover {
 
 footer {
   height: 12vh;
-  background: #000;
-  border-top: 5px solid #2e6b06;
+  background: #1f1f1f;
+  border-top: 5px solid #df1265;
 }
 
 footer p {
