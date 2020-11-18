@@ -267,6 +267,73 @@ figcaption {
   }
 }
 
+/* TEAM */
+
+section.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card {
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  text-align: center;
+
+  min-width: 50ch;
+  max-width: 60ch;
+
+  min-height: fit-content;
+
+  background-color: #f1efef;
+
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+
+  margin: 3rem 2rem;
+  border-radius: 1rem;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.card h1 {
+  font-size: 2.5rem;
+  padding-top: 1rem;
+}
+
+.card p {
+  font-size: 1.5rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.card article.socials {
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-evenly;
+
+  border-top: 0.5px solid #df1265;
+}
+
+/* Media queries for the contact cards (also applies to the mission/vision sections) */
+@media (min-width: 300px) and (max-width: 860px) {
+  #text-content .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 /* SUBSCRIBE */
 .form-section {
   min-height: 70vh;
