@@ -1,0 +1,18 @@
+<header>
+  <div class="container">
+    <section class="logo">
+      <!-- Logo uses span with class 'text-colored', which is used on different pages to keep a consistent brand color scheme -->
+      <a href="/"><h1><span class="text-colored"> <i class="fas fa-cannabis"></i> Triple</span> AI</h1></a>
+    </section>
+    <nav>
+      <ul>
+        <!-- conditional added to set the class of current page -->
+        <li><a <%if(current=="home-pg"){%>class="current"<%}%> href="/">Home</a></li>
+        <li><a <%if(current=="gallery-pg"){%>class="current"<%}%> href="/gallery">Gallery</a></li>
+        <li><a <%if(current=="team-pg"){%>class="current"<%}%> href="team">Team</a></li>
+        <li><a <%if(current=="subscribe-pg"){%>class="current"<%}%> href="/subscribe">Subscribe</a></li>
+        <li><a <%if(current=="admin-pg"){%>class="current"<%}%> href="team">Admin</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>

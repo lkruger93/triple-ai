@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <%- include('../partials/head.ejs') %>
+  
+<body class="<%= current %>" >
+
+  <%- include('../partials/nav.ejs') %>
+
+  <section class="form-section">
+    <h1 class="text-lg">Subscribe</h1>
+    <form action="https://formspree.io/f/moqpjral" method="POST">
+      <div>
+        <input type="text" name="name" placeholder="Enter your name" required>
+      </div>
+      <div>
+        <input type="email" name="_replyto" placeholder="Enter your email" required>
+      </div>
+      <div>
+        <p>By clicking subscribe, you are agreeing to our conditions, and to recieve weekly updates.</p>
+      </div>
+      <div>
+        <button  type="submit" class="button-1">Subscribe</button>
+      </div>
+    </form>
+  </section>
+
+  <%- include('../partials/footer.ejs') %>
+
+</body>
+</html> 
