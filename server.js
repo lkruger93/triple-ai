@@ -1,59 +1,133 @@
-// required modules
-const express = require('express');
-const ejs = require('ejs');
+// Load dependencies
 const path = require('path');
-require('dotenv').config();
-const products = require ('./products.js');
+const express = require('express');
+const mongoose = require('mongoose');
+const ejs = require('ejs');
+const dotenv = require('dotenv').config();
 
-// express app set up
+// Import models
+const Products = require(`./models/products.js`);
+const Subscribes = require(`./models/subscribers.js`);
+
+// Connect to MongoDB
+const mongoDB = process.env.MONGODB_URL;
+mongoose.connect(mongoDB, { useUnifiedTopology: true, useNewUrlParser: true });
+
+const db = mongoose.connection;
+
+// Set up callback if DB connection fails
+db.on('error', (err) => {
+  console.log(`DB Connection Error: ${error.message}`)
+});
+
+// Set up callback if DB connection is successful
+db.once('open', (err) => {
+  console.log('Connected to DB...');
+});
+
+// Create express app
 const app = express();
 
-// register view engine
-app.set('view engine', 'ejs');
+// Set view engine
+app.set('view engine','ejs')
 
-// middleware and static
+// Use app.use to register middleware
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.urlencoded({ extended: true }));
 
+// Create HTML endpoint
 // page rendering - home
 app.get('/', (req, res) => {
-  res.render('pages/index', { title: 'Home', current: 'home-pg'});
+  res.render('pages/index', { 
+    title: 'Home', 
+    current: 'home-pg'
+  });
 });
+
 // page rendering - gallery
 app.get('/gallery', (req, res) => {
-  res.render('pages/gallery', { title: 'Gallery', current: 'gallery-pg'});
+  res.render('pages/gallery', { 
+    title: 'Gallery', 
+    current: 'gallery-pg'
+  });
 });
+
 // page rendering - team
 app.get('/team', (req, res) => {
-  res.render('pages/team', { title: 'Team', current: 'team-pg'});
+  res.render('pages/team', { 
+    title: 'Team', 
+    current: 'team-pg'
+  });
 });
-// page rendering - subscribe
+
+// page rendering - subscribes
 app.get('/subscribe', (req, res) => {
-  res.render('pages/subscribe', { title: 'Subscribe', current: 'subscribe-pg'});
+  res.render('pages/subscribe', { 
+    title: 'Subscribe', 
+    current: 'subscribe-pg'
+  });
 });
+
 // page rendering - admin
 app.get('/admin', (req, res) => {
-  res.render('pages/admin', { title: 'Admin', current: 'admin-pg'});
+  res.render('pages/admin', { 
+    title: 'Admin', 
+    current: 'admin-pg'
+  });
 });
 
-// json gallery endpoint -- took forever to figure out that the endpoint needs to be placed prior to the 404 message
+
+// JSON Endpoint: Product list 
 app.get('/api/v0/gallery', (req, res) => {
-  res.json(products);
+  Products.find({}, (req, res) => { 
+    if (!products) {
+      return res.send('Product list does not exist.');
+    }
+    res.json(products);
+  });
+})
+
+// JSON Endpoint: One Product ID
+app.get('/gallery/:id', (req, res) => {
+  let productId = req.params.id;
+  Products.findOne({'id': productId}, (req, res) => {
+    if (!product) {
+      return res.send('This product ID does not exist. Please try again!');
+    }
+    res.json(product);
+  });
+})
+
+// JSON POST Endpoint: for Subscriber Form
+app.post('/subscribers', (req, res) => {
+  let subscribers = new Subscribers(req.body);
+  subscribers.save((err) => {
+    if (err) return res.status(500).send(err);
+    res.send(`<h3>Thank you, ${req.body.name}</h3> <br> <p>Please check out our special offer with your ${req.body.email}.</p>`);
+  });
+})
+
+
+// JSON GET Endpoint: for Subscribers Admin
+app.get('/api/v0/subscribers', (req, res) => {
+  Subscribers.find({}, (req, res) => { 
+    if (!subscribers) {
+      return res.send('Subscribers list does not exist.');
+    }
+    res.json(subscribers);
+  });
+})
+
+// Return 404 errors when a file cannot be found
+app.use(function(req, res, next) {
+  res.status(404);
+  res.send('404 Error: File Not Found');
 });
 
-// 404 message using middleware
-app.use((req, res) => {
-  res.status(404).send('404: Page not found');
-});
-
-
-
-
-// setting default port to 8080 if a port environment variable isn't found
+// Set port preferrence with default
 const PORT = process.env.PORT || 3000;
 
-// Listen for request
+// Start server
 app.listen(PORT, () => {
-  console.log(`Listening on port${PORT}`);
+  console.log(`Server is running on port ${PORT}`);
 });
-
-// need to set up envs
