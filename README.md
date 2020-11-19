@@ -1,6 +1,3 @@
-## Team name: 3AI
-## Website theme: Gaming accessories and peripherals
-
 ## [Course title: CPNT-262-Final: Web Client & Server Prog.]
 
 ### * Node Final - Deployed Product/Services Website 
