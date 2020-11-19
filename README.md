@@ -23,8 +23,8 @@
 
 
 ### * Links to:
-  + [GH repo](https://github.com/CreativeNana/cpnt262-a4)
-  + [HEROKU App](https://nana-cpnt262-a4.herokuapp.com/)
+  + [GH repo](https://github.com/lkruger93/triple-ai)
+  + [HEROKU App](https://triple-ai.herokuapp.com/)
 
 ### * Comments: 
 1. Project environment setup
