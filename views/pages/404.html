@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../public/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@100;200;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"/>
+    <script src="js/client.js" type="module"></script>
+    <title>TripleAI | Page not found</title>
+  </head>
+<body>
+
+  <header>
+    <div class="container">
+      <section class="logo">
+        <!-- Logo uses span with class 'text-colored', which is used on different pages to keep a consistent brand color scheme -->
+        <a href="/"><h1><span class="text-colored"> <i class="fas fa-headset"></i> Triple</span> AI</h1></a>
+      </section>
+      <nav>
+        <ul>
+          <!-- conditional added to set the class of current page -->
+          <li><a < >Home</a></li>
+          <li><a <%if(current=="gallery-pg"){%>class="current"<%}%> href="/gallery">Gallery</a></li>
+          <li><a <%if(current=="team-pg"){%>class="current"<%}%> href="team">Team</a></li>
+          <li><a <%if(current=="subscribe-pg"){%>class="current"<%}%> href="/subscribe">Subscribe</a></li>
+          <li><a <%if(current=="admin-pg"){%>class="current"<%}%> href="/admin">Admin</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section id="hero-section" class="home-bg">
+    <div class="container">
+      <h1>
+          404 Error: File not found.
+      </h1>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <!-- Dynamic copyright statement -->
+  <!-- Footer -->
+  <!-- Dynamic copyright statement -->
+  <footer>
+    <p>TripleAI Gaming Solutions &copy; <script>document.write(new Date().getFullYear());</script></p>
+</footer>
+</body>
+</html> 

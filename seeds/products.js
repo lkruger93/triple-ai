@@ -6,7 +6,8 @@ const products = [
     description:  'A white VR gaming headset',
     credit:       'https://images.unsplash.com/photo-1576633587382-13ddf37b1fc1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=752&q=80',
     price:        100.00,
-    imagePath:    'images/vr-white.jpg'
+    imagePath:    'images/vr-white.jpg',
+    width:        80
   },
   {
     id:           2,
@@ -14,7 +15,8 @@ const products = [
     description:  'A blue-lighted black-hand keyboard',
     credit:       'https://images.unsplash.com/photo-1558744037-2f2f6f2fbf6a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
     price:        200.00,
-    imagePath:    'images/hand-keyboard.jpg'
+    imagePath:    'images/hand-keyboard.jpg',
+    width:        80
   },
   {
     id:           3,
@@ -22,7 +24,8 @@ const products = [
     description:  'A blue-glazed gaming mouse',
     credit:       'https://images.unsplash.com/photo-1563297007-0686b7003af7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=791&q=80',
     price:        300.00,
-    imagePath:    'images/glowing-mouse.jpg'
+    imagePath:    'images/glowing-mouse.jpg',
+    width:        80
   },
   {
     id:           4,
@@ -30,7 +33,8 @@ const products = [
     description:  'A game accessories including a headphone, a joystick and a keyboard',
     credit:       'https://images.unsplash.com/photo-1600861195091-690c92f1d2cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80',
     price:        1500.00,
-    imagePath:    'images/game-accessories.jpg'
+    imagePath:    'images/game-accessories.jpg',
+    width:        60
   },
   {
     id:           5,
