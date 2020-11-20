@@ -14,11 +14,11 @@ fetch(`${window.location.origin}/api/v0/gallery`)
     products.forEach((product) => {
       output += 
         `<figure class="card">
-          <img src=${product.imagePath} alt="${product.title}" >
+        <a href="${product.credit}" alt="${product.title}"><img src=${product.imagePath} alt="${product.title}" ></a>
           <figcaption> 
-            <h2>[${product.title}]</h1>
-            <h3>${product.description}</h2>
-              <a href="${product.url}" alt="${product.credit}">${product.credit}</a>
+            <h2>[${product.title}]</h2>
+            <h3>${product.description}</h3>
+            <h3>$${product.price}</h3>
           </figcaption>
         </figure>`;
     });
