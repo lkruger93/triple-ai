@@ -1,5 +1,5 @@
 // Asynchronous fetch(): request the JSON array from the new JSON endpoint using fetch().
-const product = fetch(`${window.location.origin}/api/v0/gallery/:id`)
+export const product = fetch(`${window.location.origin}/api/v0/gallery/:id`)
   .then((res) => {
     // JSON 'data' returned from server
     return res.json();
@@ -32,5 +32,3 @@ const product = fetch(`${window.location.origin}/api/v0/gallery/:id`)
   console.log('Error!');
 });
 
-
-module.exports = product

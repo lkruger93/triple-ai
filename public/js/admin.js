@@ -1,5 +1,5 @@
 // Admin: Subscriners list
-const admin = fetch(`${window.location.origin}/api/v0/subscribers`)
+export const admin = fetch(`${window.location.origin}/api/v0/subscribers`)
 .then((res) => {
   // JSON 'data' returned from server
   return res.json();
@@ -43,7 +43,6 @@ const admin = fetch(`${window.location.origin}/api/v0/subscribers`)
   console.log('Error!');
 });
 
-module.exports = admin
 
 
 
