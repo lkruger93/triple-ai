@@ -40,6 +40,8 @@ app.use(express.urlencoded({ extended: true }));
 app.get('/', (req, res) => {
   res.render('pages/index', { 
     title: 'Home', 
+    tagline: "Enjoy with the TripleAI Gaming Solutions",
+    description: "We sells products having artificial intelligence balanced between realistic ideas and artistic instincts.",
     current: 'home-pg'
   });
 });
@@ -48,6 +50,8 @@ app.get('/', (req, res) => {
 app.get('/gallery', (req, res) => {
   res.render('pages/gallery', { 
     title: 'Gallery', 
+    tagline: 'Find a cool friend here who will be your hobby.', 
+    description: '',
     current: 'gallery-pg'
   });
 });
@@ -56,6 +60,8 @@ app.get('/gallery', (req, res) => {
 app.get('/team', (req, res) => {
   res.render('pages/team', { 
     title: 'Team', 
+    tagline: 'We are always ready to help you.', 
+    description: '',
     current: 'team-pg'
   });
 });
@@ -64,6 +70,8 @@ app.get('/team', (req, res) => {
 app.get('/subscribe', (req, res) => {
   res.render('pages/subscribe', { 
     title: 'Subscribe', 
+    tagline: 'Sign-up for our Newsletter', 
+    description: '',
     current: 'subscribe-pg'
   });
 });
@@ -72,6 +80,8 @@ app.get('/subscribe', (req, res) => {
 app.get('/admin', (req, res) => {
   res.render('pages/admin', { 
     title: 'Admin', 
+    tagline: 'Subscribers list', 
+    description: 'The subscribers list',
     current: 'admin-pg'
   });
 });
