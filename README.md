@@ -7,9 +7,9 @@
 ### * Team Name: 3AI
   + Emil Joseph: 
     + Frontend design template search
+    + Logo/Pages design: CSS files
     + EJS View Setup
     + HTML Endpoints
-    + Frontend fetch() implementation
   + Lauren Kruger: 
     + Project environment setup
     + Data Gathering: Product images
@@ -18,8 +18,12 @@
   + Na Young Lee: 
     + Schema/model implementations
     + JSON Endpoints
+    + Frontend fetch() implementation
     + DB seeds
-    + Documentation: README file
+  + Common
+    + Team Naming
+    + Project concept
+    + Documentation: README file, Page description
 
 
 ### * Links to:

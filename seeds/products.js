@@ -2,18 +2,39 @@ const products = [
 
   {
     id:           1,
-    title:        'Nintendo Switch',
-    description:  'Red abd blue mix version',
-    credit:       'https://www.pexels.com/photo/nintendo-699953/',
-    imagePath:   'images/nintendo.jpg'
+    title:        'Light Mouse',
+    description:  'a light matte blue mouse highlighted in orange.',
+    credit:       'https://github.com/lkruger93/triple-ai/blob/main/public/images/lightmouse.jpg?raw=true',
+    imagePath:    'images/litemouse.jpg'
   },
   {
     id:           2,
-    title:        'Nintendo Switch',
-    description:  'Red abd blue mix version',
-    credit:       'https://www.pexels.com/photo/nintendo-699953/',
-    imagePath:    'images/nintendo.jpg'
+    title:        'Light Mouse',
+    description:  'a light matte blue mouse highlighted in orange.',
+    credit:       'https://github.com/lkruger93/triple-ai/blob/main/public/images/lightmouse.jpg?raw=true',
+    imagePath:    'images/litemouse.jpg'
   },
+  {
+    id:           3,
+    title:        'Light Mouse',
+    description:  'a light matte blue mouse highlighted in orange.',
+    credit:       'https://github.com/lkruger93/triple-ai/blob/main/public/images/lightmouse.jpg?raw=true',
+    imagePath:    'images/litemouse.jpg'
+  },
+  {
+    id:           4,
+    title:        'Light Mouse',
+    description:  'a light matte blue mouse highlighted in orange.',
+    credit:       'https://github.com/lkruger93/triple-ai/blob/main/public/images/lightmouse.jpg?raw=true',
+    imagePath:    'images/litemouse.jpg'
+  },
+  {
+    id:           5,
+    title:        'Light Mouse',
+    description:  'a light matte blue mouse highlighted in orange.',
+    credit:       'https://github.com/lkruger93/triple-ai/blob/main/public/images/lightmouse.jpg?raw=true',
+    imagePath:    'images/litemouse.jpg'
+  }
 ];
 
 module.exports = products
