@@ -1,4 +1,4 @@
-// Admin: Subscriners list
+// Admin: Subscribers list
 fetch(`${window.location.origin}/api/v0/subscribers`)
 .then((res) => {
   // JSON 'data' returned from server

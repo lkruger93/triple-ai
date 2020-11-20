@@ -19,7 +19,7 @@ const products = [
   {
     id:           3,
     title:        'Glowing Mouse',
-    description:  'A blue-glazed gaming keyboard',
+    description:  'A blue-glazed gaming mouse',
     credit:       'https://images.unsplash.com/photo-1563297007-0686b7003af7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=791&q=80',
     price:        300.00,
     imagePath:    'images/glowing-mouse.jpg'
@@ -43,15 +43,15 @@ const products = [
   {
     id:           6,
     title:        'Black Blue Headphones',
-    description:  'A gaming headphone in combination of black and blue',
+    description:  'A gaming headphone in a stylish black colour',
     credit:       'https://images.unsplash.com/photo-1600186279172-fdbaefd74383?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
     price:        700.00,
-    imagePath:    'images/black-blue-headphones.jpg'
+    imagePath:    'images/black-headphones.jpg'
   },
   {
     id:           7,
     title:        'Clear Desktop',
-    description:  'A transparent black desktop',
+    description:  'A transparent white desktop',
     credit:       'https://images.unsplash.com/photo-1593152167544-085d3b9c4938?ixlib=rb-1.2.1&auto=format&fit=crop&w=1234&q=80',
     price:        1200.00,
     imagePath:    'images/clear-desktop.jpg'
@@ -59,7 +59,7 @@ const products = [
   {
     id:           8,
     title:        'Dark Desktop',
-    description:  'A set of transperant black desktops and keyboard package',
+    description:  'A set of transparent black desktops and keyboard package',
     credit:       'https://images.unsplash.com/photo-1572314493295-09c6d5ec3cdf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80',
     price:        2000.00,
     imagePath:    'images/dark-setup.jpg'

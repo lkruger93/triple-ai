@@ -126,7 +126,7 @@ app.use(function(req, res, next) {
   res.send('404 Error: File Not Found');
 });
 
-// Set port preferrence with default
+// Set port preference with default
 const PORT = process.env.PORT || 3000;
 
 // Start server
