@@ -1,4 +1,4 @@
-// Admin: Subscriners list
+// Admin: Subscribers list
 export const admin = fetch(`${window.location.origin}/api/v0/subscribers`)
 .then((res) => {
   // JSON 'data' returned from server
@@ -12,7 +12,7 @@ export const admin = fetch(`${window.location.origin}/api/v0/subscribers`)
   // Loop through `products` array using `array.forEach()`to create an image card
   subscribers.forEach((subscriber) => {
     output += 
-     `<h2> Admin: Suscribers List </h2>
+     `<h2> Admin: Subscribers List </h2>
       <table>
 	      <thead>
           <tr>
