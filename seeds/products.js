@@ -30,7 +30,7 @@ const products = [
   {
     id:           4,
     title:        'Game Accessories',
-    description:  'A game accessories including a headphone, a joystick and a keyboard',
+    description:  'A number of game accessories including a headphone, a joystick and a keyboard',
     credit:       'https://images.unsplash.com/photo-1600861195091-690c92f1d2cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80',
     price:        1500.00,
     imagePath:    'images/game-accessories.jpg',
@@ -42,15 +42,18 @@ const products = [
     description:  'Monitor and keyboard set',
     credit:       'https://images.unsplash.com/photo-1589241062272-c0a000072dfa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80',
     price:        1000.00,
-    imagePath:    'images/fortnite.jpg'
+    imagePath:    'images/fortnite.jpg',
+    width:        70
   },
   {
     id:           6,
-    title:        'Black Blue Headphones',
+    title:        'Black Headphones',
     description:  'A gaming headphone in a stylish black colour',
     credit:       'https://images.unsplash.com/photo-1600186279172-fdbaefd74383?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
     price:        700.00,
-    imagePath:    'images/black-headphones.jpg'
+    imagePath:    'images/black-headphones.jpg',
+    width:        50
+
   },
   {
     id:           7,
@@ -58,7 +61,8 @@ const products = [
     description:  'A transparent white desktop',
     credit:       'https://images.unsplash.com/photo-1593152167544-085d3b9c4938?ixlib=rb-1.2.1&auto=format&fit=crop&w=1234&q=80',
     price:        1200.00,
-    imagePath:    'images/clear-desktop.jpg'
+    imagePath:    'images/clear-desktop.jpg',
+    width:        40
   },
   {
     id:           8,
@@ -66,7 +70,8 @@ const products = [
     description:  'A set of transparent black desktops and keyboard package',
     credit:       'https://images.unsplash.com/photo-1572314493295-09c6d5ec3cdf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80',
     price:        2000.00,
-    imagePath:    'images/dark-setup.jpg'
+    imagePath:    'images/dark-setup.jpg',
+    width:        80
   },
   {
     id:           9,
@@ -74,7 +79,8 @@ const products = [
     description:  'A transparent white desktop gaming package',
     credit:       'https://images.unsplash.com/photo-1598057076865-c67fefd248d3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=625&q=80',
     price:        2000.00,
-    imagePath:    'images/display.jpg'
+    imagePath:    'images/display.jpg',
+    width:        80
   }
 ];
 

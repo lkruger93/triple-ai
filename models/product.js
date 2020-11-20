@@ -8,7 +8,8 @@ const productSchema = new mongoose.Schema(
     description:  String,
     credit:       String,
     price:        Number, 
-    imagePath:    String  
+    imagePath:    String,
+    width:        Number  
   }
 );
 
