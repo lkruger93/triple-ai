@@ -294,13 +294,13 @@ section.card-container {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 80vh;
 }
 
-div.container {
+.cards {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
+  height: 80vh;
 }
 
 .card {
@@ -429,6 +429,16 @@ button:hover {
   padding: 1rem 2rem;
   cursor: pointer;
 }
+
+
+/* ADMIN */
+.admin-container {
+  height: 90vh;
+}
+
+
+
+
 /* FOOTER */
 
 footer {
