@@ -222,7 +222,7 @@ section.home-bg {
   grid-template-rows: repeat(3, 1fr);
   grid-gap: 2rem;
 
-  padding: 2rem;
+  /* padding: 2rem; */
 }
 
 .gallery img {
@@ -232,14 +232,15 @@ section.home-bg {
 }
 
 .gallery img:hover {
-  opacity: 0.7;
+  opacity: 0.9;
   transition: 0.8s;
 }
 
 /* image card - image + figcaption */
-.card {
+figure.card {
   display: flex;
   flex-direction: column;
+  height: max-content;
 }
 
 figcaption {
@@ -435,6 +436,21 @@ button:hover {
 .admin-container {
   height: 90vh;
 }
+
+.subscriber {
+  width: 60vw;
+  margin: auto;
+  text-align: center;
+  margin-top: 5vh;
+}
+
+.subscriber table {
+  margin: auto;
+  text-align: center;
+  padding: 3rem;
+}
+
+/* .admin-container  */
 
 
 
