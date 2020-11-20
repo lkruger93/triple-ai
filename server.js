@@ -10,6 +10,7 @@ const Product = require(`./models/product.js`);
 const Subscriber = require(`./models/subscriber.js`);
 
 // Connect to MongoDB
+
 const mongoDB = process.env.MONGODB_URL;
 mongoose.connect(mongoDB, { useUnifiedTopology: true, useNewUrlParser: true });
 
