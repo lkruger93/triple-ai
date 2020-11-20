@@ -1,7 +1,7 @@
 {
   "name": "triple-ai",
   "version": "1.0.0",
-  "description": "",
+  "description": "+ Emil Joseph: \r     + Frontend design template search\r     + EJS View Setup\r     + HTML Endpoints\r     + Frontend fetch() implementation\r   + Lauren Kruger: \r     + Project environment setup\r     + Data Gathering: Product images\r     + EJS View Setup\r     + HEROKU deploy\r   + Na Young Lee: \r     + Schema/model implementations\r     + JSON Endpoints\r     + DB seeds\r     + Documentation: README file",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

@@ -6,9 +6,10 @@ const productSchema = new mongoose.Schema(
     id:           Number,
     title:        String,
     description:  String,
-    credit:       String, 
+    credit:       String,
+    price:        Number, 
     imagePath:    String  
   }
 );
 
-module.exports = mongoose.model('Products', productSchema);
+module.exports = mongoose.model('Product', productSchema);

@@ -6,8 +6,8 @@ const ejs = require('ejs');
 const dotenv = require('dotenv').config();
 
 // Import models
-const Products = require(`./models/products.js`);
-const Subscribes = require(`./models/subscribers.js`);
+const Product = require(`./models/product.js`);
+const Subscriber = require(`./models/subscriber.js`);
 
 // Connect to MongoDB
 const mongoDB = process.env.MONGODB_URL;
@@ -79,9 +79,9 @@ app.get('/admin', (req, res) => {
 
 // JSON Endpoint: Product list 
 app.get('/api/v0/gallery', (req, res) => {
-  Products.find({}, (req, res) => { 
+  Product.find({}, (err, products) => { 
     if (!products) {
-      return res.send('Product list does not exist.');
+      res.send('Product list does not exist.');
     }
     res.json(products);
   });
@@ -90,9 +90,9 @@ app.get('/api/v0/gallery', (req, res) => {
 // JSON Endpoint: One Product ID
 app.get('/gallery/:id', (req, res) => {
   let productId = req.params.id;
-  Products.findOne({'id': productId}, (req, res) => {
+  Product.findOne({'id': productId}, (err, product) => {
     if (!product) {
-      return res.send('This product ID does not exist. Please try again!');
+      res.send('This product ID does not exist. Please try again!');
     }
     res.json(product);
   });
@@ -100,9 +100,11 @@ app.get('/gallery/:id', (req, res) => {
 
 // JSON POST Endpoint: for Subscriber Form
 app.post('/subscribers', (req, res) => {
-  let subscribers = new Subscribers(req.body);
-  subscribers.save((err) => {
-    if (err) return res.status(500).send(err);
+  let subscriber = new Subscriber(req.body);
+  subscriber.save((err) => {
+    if (err) {
+      res.status(500).send(err);
+    }
     res.send(`<h3>Thank you, ${req.body.name}</h3> <br> <p>Please check out our special offer with your ${req.body.email}.</p>`);
   });
 })
@@ -110,9 +112,9 @@ app.post('/subscribers', (req, res) => {
 
 // JSON GET Endpoint: for Subscribers Admin
 app.get('/api/v0/subscribers', (req, res) => {
-  Subscribers.find({}, (req, res) => { 
+  Subscriber.find({}, (err, subscribers) => { 
     if (!subscribers) {
-      return res.send('Subscribers list does not exist.');
+      res.send('Subscribers list does not exist.');
     }
     res.json(subscribers);
   });
