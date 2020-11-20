@@ -9,7 +9,8 @@ const productSchema = new mongoose.Schema(
     credit:       String,
     price:        Number, 
     imagePath:    String,
-    width:        Number  
+    width:        Number,
+    height:       Number  
   }
 );
 

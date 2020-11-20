@@ -13,7 +13,7 @@ fetch(`${window.location.origin}/api/v0/gallery`)
     products.forEach((product) => {
       output += 
         `<figure class="card">
-          <a href="${product.credit}" alt="${product.title}"><img src="${product.imagePath}" width="${product.width}" alt="${product.title}" >
+          <a href="${product.credit}" alt="${product.title}"><img src="${product.imagePath}" width="${product.width}" height="${product.height}" alt="${product.title}" >
             <figcaption> 
               <h2>[${product.title}]</h2>
               <h3>${product.description}</h3>
