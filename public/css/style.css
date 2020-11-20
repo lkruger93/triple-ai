@@ -130,6 +130,7 @@ header {
   border-bottom: 2px solid #df1265;
 
   overflow: hidden;
+  text-align: center;
 }
 
 header .container {
