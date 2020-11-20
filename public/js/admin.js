@@ -1,5 +1,5 @@
-// Admin: Subscribers list
-fetch(`${window.location.origin}/api/v0/subscribers`)
+// Admin: Subscriners list
+export const admin = fetch(`${window.location.origin}/api/v0/subscribers`)
 .then((res) => {
   // JSON 'data' returned from server
   return res.json();
@@ -7,11 +7,11 @@ fetch(`${window.location.origin}/api/v0/subscribers`)
 .then((subscribers) => {
   console.log(subscribers);
 
-  let output2 = '';
+  let output = '';
 
   // Loop through `products` array using `array.forEach()`to create an image card
   subscribers.forEach((subscriber) => {
-    output2 += 
+    output += 
      `<h2> Admin: Suscribers List </h2>
       <table>
 	      <thead>
@@ -30,8 +30,8 @@ fetch(`${window.location.origin}/api/v0/subscribers`)
             <td>${subscriber.date}</td>
           </tr>
         </tbody>
-      </table>`;
-
+      </table>
+    `;
   });
 
   //Send output to Dom

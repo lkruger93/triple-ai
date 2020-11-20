@@ -1,11 +1,11 @@
 // Asynchronous fetch(): request the JSON array from the new JSON endpoint using fetch().
-export const gallery = fetch(`${window.location.origin}/api/v0/gallery`)
+export const product = fetch(`${window.location.origin}/api/v0/gallery/:id`)
   .then((res) => {
     // JSON 'data' returned from server
     return res.json();
   })
-  .then((products) => {
-    console.log(products);
+  .then((product) => {
+    console.log(product);
 
     let output = '';
 
@@ -13,7 +13,7 @@ export const gallery = fetch(`${window.location.origin}/api/v0/gallery`)
     products.forEach((product) => {
       output += 
         `<figure class="card">
-          <a href="${product.credit}" alt="${product.title}"><img src="${product.imagePath}" width="${product.width}" height="${product.height}" alt="${product.title}" >
+         <img src=${product.imagePath} alt="${product.title}" >
             <figcaption> 
               <h2>[${product.title}]</h2>
               <h3>${product.description}</h3>
