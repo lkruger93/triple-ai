@@ -29,14 +29,14 @@ db.once('open', () => {
   console.log('Connected to DB...');
 });
 
-// Insert data to DB : will add a data redundancy check
+// Insert data to DB: Product
 Product.insertMany(dbSeed1, (err, product) =>  {
   console.log('Product Data import completed.');
   mongoose.connection.close();
 });
 
-//  will add a data redundancy check
-/*Subscriber.insertMany(dbSeed2, (err, subscriber) => {
+// Insert data to DB: Subscriber
+Subscriber.insertMany(dbSeed2, (err, subscriber) => {
   console.log('Subscriber Data import completed.');
   mongoose.connection.close();
-});*/
+});
