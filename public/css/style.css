@@ -77,7 +77,26 @@ ul {
   padding: 1.5rem 2rem;
 }
 
+#hero-section .btn-lg {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #f4f4f4;
+
+  border: 1px solid #f4f4f4;
+  border-radius: 0.5rem;
+  padding: 1.5rem 2rem;
+}
+
 .btn-lg:hover {
+  font-size: 2rem;
+  color: #df1265;
+
+  border: 1px solid #df1265;
+  border-radius: 0.5rem;
+  padding: 1.5rem 2rem;
+}
+
+#hero-section .btn-lg:hover {
   font-size: 2rem;
   color: #df1265;
 
@@ -172,11 +191,11 @@ header nav a:hover {
   min-height: 95vh;
 
   text-align: center;
-  color: #1f1f1f;
+  color: #f4f4f4;
 }
 
 section.home-bg {
-  background: url(../images/hero-bg-3-2.jpg) no-repeat center center/cover;
+  background: url(../images/heroheader.jpg) no-repeat center center/cover;
 }
 
 #hero-section .container {
@@ -185,13 +204,14 @@ section.home-bg {
 
 #hero-section h1 {
   font-size: 5rem;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 #hero-section p {
   font-size: 2.5rem;
   font-weight: 400;
   padding: 3rem;
+  margin-bottom: 4rem;
 }
 
 /* GALLERY */
@@ -415,5 +435,5 @@ footer p {
   font-size: 1.75rem;
   font-weight: 100;
   color: #f4f4f4;
-  padding-top: 1rem;
+  padding-top: 3rem;
 }
