@@ -296,6 +296,11 @@ section.card-container {
   align-items: center;
 }
 
+div.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
 
 .card {
   margin: auto;
