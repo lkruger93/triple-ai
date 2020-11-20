@@ -121,10 +121,14 @@ app.get('/api/v0/subscribers', (req, res) => {
 })
 
 // Return 404 errors when a file cannot be found
-app.use(function(req, res, next) {
-  res.status(404);
-  res.send('404 Error: File Not Found');
+app.get( '*', (req, res) => {
+  // res.status(404).sendFile('./views/404.html', { root: __dirname})
+  res.status(404).sendFile('./views/pages/404.html', { root: __dirname});
 });
+// app.use(function(req, res, next) {
+//   res.status(404);
+//   res.send('404 Error: File Not Found');
+// });
 
 // Set port preferrence with default
 const PORT = process.env.PORT || 3000;
