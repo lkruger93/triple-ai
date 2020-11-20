@@ -294,6 +294,7 @@ section.card-container {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  height: 80vh;
 }
 
 div.container {
