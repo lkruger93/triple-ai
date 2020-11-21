@@ -1,29 +1,34 @@
 ## [Course title: CPNT-262-Final: Web Client & Server Prog.]
 
-### * Node Final - Deployed Product/Services Website 
-### * Team Name: 3AI
-  + Emil Joseph: 
+### **Node Final - Deployed Product/Services Website** 
+### **Team Name: Triple AI (Artistic Instincts, Actual Ideas, Artificial Intelligence)**
+  + **Emil Joseph:** 
     + Frontend design template search
     + Logo/Pages design: CSS files
     + EJS View Setup
     + HTML Endpoints
-  + Lauren Kruger: 
+
+  + **Lauren Kruger:** 
     + Project environment setup
     + Data Gathering: Product images
     + EJS View Setup
     + HEROKU deploy
-  + Na Young Lee: 
-    + Schema/model implementations
+
+  + **Na Young Lee:** 
+    + Schema/model implementations / DB Seeds
     + JSON Endpoints
     + Frontend fetch() implementation
-    + DB seeds
+    + EJS View Setup: Form Support
+    + README file
+
   + Common
-    + Team Naming
-    + Project concept
-    + Documentation: README file, Page description
+    + Team Naming 
+    + Site concept
 
+# **Site Concept:**
+  + The site aims to promote and sell gaming products designed to deliver new experiences that can be accessed from the real world to customers through artistic and future-oriented products.
 
-### * Links to:
+### Links to:
   + [GH repo](https://github.com/lkruger93/triple-ai)
   + [HEROKU App](https://triple-ai.herokuapp.com/)
 
@@ -39,11 +44,13 @@
       - Public: original html files, images & data sources
       - Views: interlink data to view engine files and modularize common files
       - Control uploading files
+  + [Return 404 Error page sample](https://triple-ai.herokuapp.com/api/v0/gallery:1)
+
 
 2. Research & Data gathering
   + Team Name/Project Theme
   + Design Template 
-  + Images: download images from 000 and edit them
+  + Images from 
 
 
 3. EJS View setup 
@@ -53,30 +60,35 @@
 
 4. HTML Endpoints Creation
   + Index
-  + Subscribe
   + Gallery
+  + Subscribe
   + Team
   + Admin
 
 
-5. Database setup 
+5. Database setup; Gallery, Subscriber
   + DB Seeds
   + Schema/model implementations
 
 
 6. JSON Endpoings
+  + [/api/v0/gallery](https://triple-ai.herokuapp.com/api/v0/gallery)
+  + [/gallery/:id](https://triple-ai.herokuapp.com/gallery/2)
+  + [/api/v0/subscribers](https://triple-ai.herokuapp.com/api/v0/subscribers)
 
 7. Frontend fetch() implementation
+  + Gallery: list product
+  + Gallery: single product 
+  + Subscribe
+  + Admin: subscriber list 
 
 8. Deploy to Heroku
-  + Connect between Heroku App and GitHub Repo
-  + MongoDB 
+  + Connect between Heroku App, GitHub Repo, and MongoDB  
 
 
-   
 ### * Attributions: 
-  + Acidtone sample code
-  + Image.. 
+  + Acidtone Samlple-code [Mongoose](https://github.com/sait-wbdv/sample-code/tree/master/backend/mongoose/hello-mongoose) [gallery-refactor](https://github.com/sait-wbdv/sample-code/blob/master/backend/express/routes/post-requests/subscribe/server.js)
+  + UNSPLASH free images(https://unsplash.com/) 
 
  
 
