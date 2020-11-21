@@ -9,20 +9,22 @@
 
   <section class="form-section">
     <h1 class="text-lg">Subscribe</h1>
-    <form class="subscribe-form" action="https://formspree.io/f/moqpjral" method="POST">
+    <form id="frmSubscriber" class="subscribe-form" action="/subscribers" method="POST">
       <div>
-        <input type="text" name="name" placeholder="Enter your name" required>
+        <input type="text" id="name" name="name" placeholder="Please enter your name" required>
       </div>
       <div>
-        <input type="email" name="_replyto" placeholder="Enter your email" required>
+        <input type="email" id="email" name="email" placeholder="Please enter your email" required>
       </div>
       <div>
         <p>By clicking subscribe, you are agreeing to our conditions, and to receive weekly updates.</p>
       </div>
       <div>
-        <button  type="submit" class="button-1">Subscribe</button>
+        <button type="submit" class="button-1" onclick="document.getElementById('date').value=Date()">Subscribe</button>
       </div>
+      <input type="hidden" id="date" name="date" required value="">
     </form>
+    
   </section>
 
   <%- include('../partials/footer.ejs') %>
