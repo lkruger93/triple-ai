@@ -30,11 +30,11 @@ db.once('open', () => {
 });
 
 // Insert data to DB: Product
-Product.insertMany(dbSeed1, (err, product) =>  {
+/* Product.insertMany(dbSeed1, (err, product) =>  {
   console.log('Product Data import completed.');
   mongoose.connection.close();
 });
-
+*/
 // Insert data to DB: Subscriber
 Subscriber.insertMany(dbSeed2, (err, subscriber) => {
   console.log('Subscriber Data import completed.');
