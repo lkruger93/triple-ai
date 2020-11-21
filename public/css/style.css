@@ -462,8 +462,6 @@ button:hover {
 .subscriber {
   width: 80vw;
   margin: auto; 
-  margin-top: 5vh;
-  margin-bottom: 2rem;
 
   display: flex;
   flex-direction: column;
