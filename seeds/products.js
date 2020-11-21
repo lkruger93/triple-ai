@@ -38,8 +38,8 @@ const products = [
     credit:       'https://images.unsplash.com/photo-1600861195091-690c92f1d2cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80',
     price:        1500.00,
     imagePath:    'images/game-accessories.jpg',
-    width:        100,
-    height:       90
+    width:        250,
+    height:       158.18
   },
   {
     id:           5,
