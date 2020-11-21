@@ -131,6 +131,7 @@ header {
 
   overflow: hidden;
   text-align: center;
+  margin-bottom: 2vh;
 }
 
 header .container {
@@ -371,9 +372,9 @@ section.card-container {
 
 /* SUBSCRIBE */
 .form-section {
-  min-height: 70vh;
+  min-height: 80vh;
   padding-top: 5vh;
-  margin-top: 10vh;
+  margin-top: 3vh;
 }
 form {
   width: 70%;
@@ -470,7 +471,9 @@ footer {
   height: 12vh;
   background: #1f1f1f;
   border-top: 5px solid #df1265;
-  margin-top: -1vh;
+  position: static;
+  bottom: 0;
+  width: 100%;
 }
 
 footer p {
