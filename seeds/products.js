@@ -34,12 +34,12 @@ const products = [
   {
     id:           4,
     title:        'Game Accessories',
-    description:  'A number of game accessories including a headphone, a joystick and a keyboard',
+    description:  'A number of game accessories including a headphone and joystick',
     credit:       'https://images.unsplash.com/photo-1600861195091-690c92f1d2cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80',
     price:        1500.00,
     imagePath:    'images/game-accessories.jpg',
-    width:        250,
-    height:       158.18
+    width:        100,
+    height:       80
   },
   {
     id:           5,
