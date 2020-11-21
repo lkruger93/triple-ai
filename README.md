@@ -44,7 +44,7 @@
       - Public: original html files, images & data sources
       - Views: interlink data to view engine files and modularize common files
       - Control uploading files
-  + [Return 404 Error page sample](https://triple-ai.herokuapp.com/api/v0/gallery:1)
+  + [Return 404 Error page sample](https://triple-ai.herokuapp.com/subscribers)
 
 
 **2. Research & Data gathering**
