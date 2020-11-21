@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <%- include('../partials/head.ejs') %>
+
+<body>
+  <header>
+    <div class="container">
+      <section class="logo">
+        <!-- Logo uses span with class 'text-colored', which is used on different pages to keep a consistent brand color scheme -->
+        <a href="/"><h1><span class="text-colored"> <i class="fas fa-headset"></i> Triple</span> AI</h1></a>
+      </section>
+      <%- include('../partials/nav.ejs') %>
+    </div>
+  </header>
+  <section id="hero-section" class="home-bg">
+    <%- include('../partials/error.ejs') %>
+  </section>
+
+  <!-- footer -->
+   <%- include('../partials/footer.ejs') %>
+  
+</body>
+</html> 

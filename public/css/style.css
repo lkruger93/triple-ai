@@ -13,9 +13,14 @@ accent color - 2 /Smaller Headings etc : #f4f4f4
   margin: 0;
 }
 
-html {
+/* na */
+html, body {
+  min-height: 100vh;
   font-size: 10px;
 }
+/* html {
+  font-size: 10px;
+} */
 
 h1,
 h2,
@@ -34,7 +39,6 @@ a {
 }
 
 /* UTILITIES */
-
 .container {
   width: 85%;
   margin: auto;
@@ -60,6 +64,16 @@ ul {
 .text-lg {
   font-size: 4rem;
   text-align: center;
+  margin-top: 2vh; 
+  margin-bottom: 2vh; 
+}
+
+.text-md {
+  font-size: 2.3rem;
+  color: dimgray;
+  text-align: center;
+  margin-top: 1vh; 
+  margin-bottom: 1vh; 
 }
 
 .current {
@@ -123,15 +137,14 @@ ul {
 }
 
 /* HEADER */
-
 header {
   background-color: #1f1f1f;
-  min-height: fit-content;
+  /* min-height: fit-content; */
   border-bottom: 2px solid #df1265;
 
   overflow: hidden;
   text-align: center;
-  margin-bottom: 2vh;
+  /* margin-bottom: 2vh; */
 }
 
 header .container {
@@ -297,24 +310,26 @@ figcaption {
 }
 
 /* TEAM */
-
 section.card-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; 
+
+  margin: auto;
 }
 
 .cards {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 80vh;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; 
+  
+  min-height: 75vh;
 }
 
 .card {
   margin: auto;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -324,11 +339,9 @@ section.card-container {
 
   min-width: 50ch;
   max-width: 60ch;
-
-  min-height: fit-content;
+  /* min-height: fit-content; */
 
   background-color: #f1efef;
-
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
 
   margin: 3rem 2rem;
@@ -362,17 +375,18 @@ section.card-container {
   border-top: 0.5px solid #df1265;
 }
 
-/* Media queries for the contact cards (also applies to the mission/vision sections) */
-@media (min-width: 300px) and (max-width: 860px) {
+/* Media queries for the team cards */
+/* @media (min-width: 300px) and (max-width: 860px) {
   #text-content .container {
     display: flex;
     flex-direction: column;
+
   }
-}
+} */
 
 /* SUBSCRIBE */
 .form-section {
-  min-height: 80vh;
+  min-height: 75vh;
   padding-top: 5vh;
   margin-top: 3vh;
 }
@@ -442,32 +456,53 @@ button:hover {
 
 /* ADMIN */
 .admin-container {
-  height: 90vh;
+  min-height: 75vh;
 }
 
 .subscriber {
-  width: 60vw;
-  margin: auto;
-  text-align: center;
+  width: 80vw;
+  margin: auto; 
   margin-top: 5vh;
+  margin-bottom: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .subscriber ul {
+  width: 80vw;
   list-style-type: none;
-  padding: 2rem;
   border-bottom: 0.5px dotted #1f1f1f;
 }
 
+.subscriber ul:nth-child(odd){
+  background-color: lightgray;
+}
+.subscriber ul:nth-child(even){
+  background-color: white;
+}
+.subscriber ul li{
+  text-align: left;
+  padding: 1.5rem 1.5rem;
+  min-width: 33%;
+}
 
+/* Media queries for the team cards */
+@media (min-width: 300px) and (max-width: 860px) {
+  .subscriber {
+    margin: 1rem; 
+  }
 
-/* .admin-container  */
-
-
+  .subscriber ul {
+    width: 95vw;
+  }
+}
 
 
 /* FOOTER */
-
 footer {
+  margin: auto;
   height: 12vh;
   background: #1f1f1f;
   border-top: 5px solid #df1265;
@@ -475,6 +510,7 @@ footer {
   bottom: 0;
   width: 100%;
 }
+
 
 footer p {
   text-align: center;

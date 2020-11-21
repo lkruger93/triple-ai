@@ -128,8 +128,7 @@ app.get('/api/v0/subscribers', (req, res) => {
 
 // Return 404 errors when a file cannot be found
 app.get( '*', (req, res) => {
-  // res.status(404).sendFile('./views/404.html', { root: __dirname})
-  res.status(404).sendFile('./views/pages/404.html', { root: __dirname});
+  res.status(404).sendFile('./views/pages/404.ejs', { root: __dirname});
 });
 // app.use(function(req, res, next) {
 //   res.status(404);

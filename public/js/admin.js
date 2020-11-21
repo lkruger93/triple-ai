@@ -11,11 +11,12 @@ export const admin = fetch(`${window.location.origin}/api/v0/subscribers`)
 
   // Loop through `products` array using `array.forEach()`to create an image card
   subscribers.forEach((subscriber) => {
+
     output += 
      `<ul>
         <li><h2>${subscriber.name}</h2></li>
         <li><h3>${subscriber.email}</h3></li>
-        <li><h3>${subscriber.date}</h3></li>
+        <li><h3>${new Date(subscriber.date).toLocaleString()}</h3></li>
       </ul>
     `;
   });
