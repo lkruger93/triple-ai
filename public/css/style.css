@@ -130,6 +130,7 @@ header {
   border-bottom: 2px solid #df1265;
 
   overflow: hidden;
+  text-align: center;
 }
 
 header .container {
@@ -215,6 +216,11 @@ section.home-bg {
 }
 
 /* GALLERY */
+#gallery {
+  width: 90vw;
+  display: flex;
+  margin: auto;
+}
 
 .gallery {
   display: grid;
@@ -222,7 +228,8 @@ section.home-bg {
   grid-template-rows: repeat(3, 1fr);
   grid-gap: 2rem;
 
-  /* padding: 2rem; */
+  padding: 2rem;
+  margin: auto;
 }
 
 .gallery img {
