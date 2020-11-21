@@ -25,15 +25,15 @@
     + Team Naming 
     + Site concept
 
-# **Site Concept:**
+### **Site Concept:**
   + The site aims to promote and sell gaming products designed to deliver new experiences that can be accessed from the real world to customers through artistic and future-oriented products.
 
 ### Links to:
-  + [GH repo](https://github.com/lkruger93/triple-ai)
-  + [HEROKU App](https://triple-ai.herokuapp.com/)
+  + **[GH repo](https://github.com/lkruger93/triple-ai)**
+  + **[HEROKU App](https://triple-ai.herokuapp.com/)**
 
-### * Comments: 
-1. Project environment setup
+### **Comments:** 
+**1. Project environment setup**
   + package and module install 
       - NPM(Node package management)
       - Express(web framework)
@@ -47,18 +47,18 @@
   + [Return 404 Error page sample](https://triple-ai.herokuapp.com/api/v0/gallery:1)
 
 
-2. Research & Data gathering
+**2. Research & Data gathering**
   + Team Name/Project Theme
   + Design Template 
   + Images from 
 
 
-3. EJS View setup 
+**3. EJS View setup** 
   + Create views and partials directory
   + Separate repeating elements into individual pages under 'partials' directory
 
 
-4. HTML Endpoints Creation
+**4. HTML Endpoints Creation**
   + Index
   + Gallery
   + Subscribe
@@ -66,29 +66,29 @@
   + Admin
 
 
-5. Database setup; Gallery, Subscriber
+**5. Database setup; Gallery, Subscriber**
   + DB Seeds
   + Schema/model implementations
 
 
-6. JSON Endpoings
+**6. JSON Endpoings**
   + [/api/v0/gallery](https://triple-ai.herokuapp.com/api/v0/gallery)
   + [/gallery/:id](https://triple-ai.herokuapp.com/gallery/2)
   + [/api/v0/subscribers](https://triple-ai.herokuapp.com/api/v0/subscribers)
 
-7. Frontend fetch() implementation
+**7. Frontend fetch() implementation**
   + Gallery: list product
   + Gallery: single product 
   + Subscribe
   + Admin: subscriber list 
 
-8. Deploy to Heroku
+**8. Deploy to Heroku**
   + Connect between Heroku App, GitHub Repo, and MongoDB  
 
 
-### * Attributions: 
-  + Acidtone Samlple-code [Mongoose](https://github.com/sait-wbdv/sample-code/tree/master/backend/mongoose/hello-mongoose) [gallery-refactor](https://github.com/sait-wbdv/sample-code/blob/master/backend/express/routes/post-requests/subscribe/server.js)
-  + UNSPLASH free images(https://unsplash.com/) 
+### **Attributions:** 
+  + **Acidtone Samlple-code** [Mongoose](https://github.com/sait-wbdv/sample-code/tree/master/backend/mongoose/hello-mongoose) [gallery-refactor](https://github.com/sait-wbdv/sample-code/blob/master/backend/express/routes/post-requests/subscribe/server.js)
+  + **UNSPLASH free images**(https://unsplash.com/) 
 
  
 
