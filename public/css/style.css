@@ -451,11 +451,13 @@ button:hover {
   margin-top: 5vh;
 }
 
-.subscriber table {
-  margin: auto;
-  text-align: center;
-  padding: 3rem;
+.subscriber ul {
+  list-style-type: none;
+  padding: 2rem;
+  border-bottom: 0.5px dotted #1f1f1f;
 }
+
+
 
 /* .admin-container  */
 

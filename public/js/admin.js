@@ -13,9 +13,9 @@ export const admin = fetch(`${window.location.origin}/api/v0/subscribers`)
   subscribers.forEach((subscriber) => {
     output += 
      `<ul>
-        <li>${subscriber.name}</li>
-        <li>${subscriber.email}</li>
-        <li>${subscriber.date}</li>
+        <li><h2>${subscriber.name}</h2></li>
+        <li><h3>${subscriber.email}</h3></li>
+        <li><h3>${subscriber.date}</h3></li>
       </ul>
     `;
   });
