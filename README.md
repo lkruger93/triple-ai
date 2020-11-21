@@ -79,22 +79,5 @@
   + Image.. 
 
  
-hand-keyboard.jpg https://images.unsplash.com/photo-1558744037-2f2f6f2fbf6a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80
-
-clear-desktop.jpg https://images.unsplash.com/photo-1587302912306-cf1ed9c33146?ixlib=rb-1.2.1&auto=format&fit=crop&w=328&q=80
-
-fortnite.jpg https://images.unsplash.com/photo-1589241062272-c0a000072dfa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80
-
-display.jpg https://images.unsplash.com/photo-1598057076865-c67fefd248d3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=625&q=80
-
-dark-setup.jpg https://images.unsplash.com/photo-1572314493295-09c6d5ec3cdf?ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80
-
-game-accessories.jpg https://images.unsplash.com/photo-1600861195091-690c92f1d2cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80
-
-glowing-mouse.jpg https://images.unsplash.com/photo-1563297007-0686b7003af7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=791&q=80
-
-vr-white.jpg https://images.unsplash.com/photo-1576633587382-13ddf37b1fc1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=752&q=80
-
-black-headphones.jpg https://images.unsplash.com/photo-1585298723682-7115561c51b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=80
 
 

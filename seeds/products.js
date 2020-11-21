@@ -7,7 +7,7 @@ const products = [
     credit:       'https://images.unsplash.com/photo-1576633587382-13ddf37b1fc1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=752&q=80',
     price:        100.00,
     imagePath:    'images/vr-white.jpg',
-    width:        80,
+    width:        130,
     height:       100
   },
   {
@@ -57,7 +57,7 @@ const products = [
     credit:       'https://images.unsplash.com/photo-1600186279172-fdbaefd74383?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
     price:        700.00,
     imagePath:    'images/black-headphones.jpg',
-    width:        50,
+    width:        70,
     height:       100
   },
   {
