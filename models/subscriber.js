@@ -4,7 +4,7 @@ const subscriberSchema = new mongoose.Schema(
   {
     name:  String,
     email: String,
-    date:  Object
+    date:  String
   }
 );
 
