@@ -16,8 +16,8 @@ export const gallery = fetch(`${window.location.origin}/api/v0/gallery`)
           <a href="${product.credit}" alt="${product.title}"><img src=${product.imagePath} width="${product.width}" height="${product.height}" alt="${product.title}" >
             <figcaption> 
               <h2>[${product.title}]</h2>
-              <h3>${product.description}</h3>
-              <h3>$${product.price}</h3>
+              <p>${product.description}</p>
+              <p>$${product.price}</p>
             </figcaption>
           </a>
         </figure>`;
