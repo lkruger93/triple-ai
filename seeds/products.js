@@ -39,7 +39,7 @@ const products = [
     price:        1500.00,
     imagePath:    'images/game-accessories.jpg',
     width:        100,
-    height:       80
+    height:       90
   },
   {
     id:           5,
